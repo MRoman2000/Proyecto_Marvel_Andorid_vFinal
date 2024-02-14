@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color para el estado normal (no seleccionado) -->
+    <item android:color="@color/white" android:state_checked="false" />
+
+    <!-- Color para el estado seleccionado -->
+    <item android:color="#F19D9D" android:state_checked="true" />
+</selector>

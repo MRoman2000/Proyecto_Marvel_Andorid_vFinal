@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recyclerSeriesFragment"
+        android:icon="@drawable/ic_assignment"
+        android:title="Series" />
+
+    <item
+        android:id="@+id/recyclerBusquedaFragment"
+        android:icon="@drawable/ic_search"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/agregarSerieFragment"
+        android:icon="@drawable/ic_add"
+        android:title="Agregar" />
+</menu>

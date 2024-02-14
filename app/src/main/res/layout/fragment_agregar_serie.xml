@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".AgregarSerieFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_serie">
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/id"
+            android:imeOptions="actionNext"
+
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/t_tulo"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descripci_n"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/editTextResourceURI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/uri_del_recurso"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/editTextStartYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/a_o_de_inicio"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextEndYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/a_o_de_fin"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_photo" />
+
+        <EditText
+            android:id="@+id/editTextStoryAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Historia disponible"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextStoryReturned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Historia devuelta"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <Button
+            android:layout_marginTop="65dp"
+            android:id="@+id/buttonSave"
+            android:backgroundTint="#550101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

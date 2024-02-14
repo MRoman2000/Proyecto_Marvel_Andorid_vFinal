@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/primerFragment">
+    <fragment
+        android:id="@+id/mostrarSeriesFragment"
+        android:name="roman.com.example.proyecto_marvel.MostrarSeriesFragment"
+        android:label="fragment_mostrar_series"
+        tools:layout="@layout/fragment_mostrar_series" >
+        <action
+            android:id="@+id/action_mostrarSeriesFragment_to_recyclerSeriesFragment"
+            app:destination="@id/recyclerSeriesFragment" />
+        <action
+            android:id="@+id/action_mostrarSeriesFragment_to_recyclerBusquedaFragment"
+            app:destination="@id/recyclerBusquedaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerSeriesFragment"
+        android:name="roman.com.example.proyecto_marvel.RecyclerSeriesFragment"
+        android:label="fragment_recycler_series"
+        tools:layout="@layout/fragment_recycler_series" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerBusquedaFragment"
+        android:name="roman.com.example.proyecto_marvel.RecyclerBusquedaFragment"
+        tools:layout="@layout/fragment_recycler_series"
+        android:label="RecyclerBusquedaFragment" />
+    <action
+        android:id="@+id/action_mostrarSeriesFragment"
+        app:destination="@id/mostrarSeriesFragment" />
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="roman.com.example.proyecto_marvel.PrimerFragment"
+        android:label="fragment_primer"
+        tools:layout="@layout/fragment_primer" >
+        <action
+            android:id="@+id/action_primerFragment_to_recyclerSeriesFragment"
+            app:destination="@id/recyclerSeriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarSerieFragment"
+        android:name="roman.com.example.proyecto_marvel.AgregarSerieFragment"
+        android:label="fragment_agregar_serie"
+        tools:layout="@layout/fragment_agregar_serie" />
+
+
+</navigation>
