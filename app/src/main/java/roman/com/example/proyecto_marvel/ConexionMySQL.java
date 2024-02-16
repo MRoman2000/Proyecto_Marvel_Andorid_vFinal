@@ -15,10 +15,10 @@ public class ConexionMySQL {
     public Connection obtenerConexion() {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            String DB_URL = "jdbc:mysql://monorail.proxy.rlwy.net:15694/railway";
-            String USER = "root";
-            String PASSWORD = "gcf24ea2chBeaABhBcA1A-1c5GDdH51F";
-            con = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+            String url = "jdbc:mysql://monorail.proxy.rlwy.net:34858/railway";
+            String user = "root";
+            String password = "DbGfcB5c63FF132AaB5af23G5c6gh5ab";
+            con = DriverManager.getConnection(url, user, password);
             if (con != null) {
                 System.out.println("Conexión exitosa");
             }
